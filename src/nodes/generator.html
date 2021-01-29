@@ -1,0 +1,44 @@
+<script type="text/javascript">
+    RED.nodes.registerType('generator',{
+        category: 'protobuf',
+        color: '#a6bbcf',
+        defaults: {
+            name: {value:""},
+            protofile: {
+                value: "",
+                type: "protobuf-file"
+            },
+            protoType: {
+                value: ""
+            }
+        },
+        inputs:1,
+        outputs:1,
+        icon: "hash.png",
+        label: function() {
+            return this.name||"generator";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="generator">
+    <div class="form-row">
+        <label for="node-input-name">
+            <i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-protofile">
+            <i class="icon-file"></i> Proto File</label>
+        <input type="text" id="node-input-protofile">
+    </div>
+    <div class="form-row">
+        <label for="node-input-protoType">
+            <i class="icon-tag"></i> Type</label>
+        <input type="text" id="node-input-protoType" placeholder="Proto Message Type">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="generator">
+    <p>A simple node that converts the message payloads into all lower-case characters</p>
+</script>

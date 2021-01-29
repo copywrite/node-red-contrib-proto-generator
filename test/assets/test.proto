@@ -1,5 +1,5 @@
 syntax = "proto3";
-
+package app;
 message TestType { 
 	double timestamp = 1;
 	float foo = 2;

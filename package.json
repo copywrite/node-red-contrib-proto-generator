@@ -4,7 +4,7 @@
   "description": "Protocol buffer encode/decode nodes.",
   "main": "src/index.js",
   "scripts": {
-    "test": "mocha \"test/**/*spec.js\"",
+    "test": "mocha \"test/**/*spec.js\" --grep",
     "coverage": "nyc npm run test",
     "lint": "eslint \"src/**/*.js\"",
     "lint-fix": "eslint --fix \"src/**/*.js\""
@@ -27,7 +27,8 @@
     "nodes": {
       "encode": "src/nodes/encode.js",
       "decode": "src/nodes/decode.js",
-      "file": "src/nodes/protofile.js"
+      "file": "src/nodes/protofile.js",
+      "generator": "src/nodes/generator.js"
     }
   },
   "devDependencies": {
