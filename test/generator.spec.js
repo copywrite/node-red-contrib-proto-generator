@@ -64,7 +64,7 @@ var generatorH2Flow = [{
   'id': 'c55e9eb5.3175',
   'type': 'protobuf-file',
   'z': '',
-  'protopath': '/Users/pengdi/.node-red/proto/H2.proto'
+  'protopath': '/Users/copywrite/.node-red/proto/H2.proto'
 }
 ];
 
